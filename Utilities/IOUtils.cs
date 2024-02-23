@@ -1,4 +1,5 @@
-﻿#pragma warning disable CS8600
+﻿#pragma warning disable CA1303
+#pragma warning disable CS8600
 #pragma warning disable CS8603
 
 namespace ProgrammingLabs.Utilities;
