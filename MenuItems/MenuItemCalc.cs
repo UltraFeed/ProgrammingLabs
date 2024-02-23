@@ -1,6 +1,4 @@
-﻿#pragma warning disable CA1303
-
-using ProgrammingLabs.Utilities;
+﻿using ProgrammingLabs.Utilities;
 
 namespace ProgrammingLabs.MenuItems;
 
@@ -42,6 +40,7 @@ internal sealed class MenuItemCalc : MenuItemCore
 				Console.WriteLine("y = " + y);
 				Console.WriteLine("z = " + z);
 			}
+
 			int input = IOUtils.GetInt("cn", "Input In Range (0-15): ");
 
 			if (input == 1)
@@ -233,7 +232,9 @@ internal sealed class MenuItemCalc : MenuItemCore
 			{
 				Console.WriteLine("Unknown Input");
 			}
+
 			IOUtils.WaitForKey();
+
 			if (IOUtils.ExternalValues != null)
 			{
 				_ = Console.ReadLine();

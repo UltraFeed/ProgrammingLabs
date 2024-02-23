@@ -1,6 +1,4 @@
-﻿#pragma warning disable CA1303
-
-using ProgrammingLabs.Utilities;
+﻿using ProgrammingLabs.Utilities;
 
 namespace ProgrammingLabs.MenuItems;
 
@@ -103,6 +101,7 @@ internal sealed class MenuItemStrings : MenuItemCore
 		{
 			Console.WriteLine(ex.Message);
 		}
+
 		IOUtils.WaitForKey();
 
 		try
@@ -125,7 +124,9 @@ internal sealed class MenuItemStrings : MenuItemCore
 		{
 			Console.WriteLine(ex.Message);
 		}
+
 		IOUtils.WaitForKey();
+
 		if (IOUtils.ExternalValues != null)
 		{
 			_ = Console.ReadLine();

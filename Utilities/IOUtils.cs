@@ -1,4 +1,5 @@
-﻿#pragma warning disable CA1303
+﻿#pragma warning disable CS8600
+#pragma warning disable CS8603
 
 namespace ProgrammingLabs.Utilities;
 
@@ -8,7 +9,7 @@ public static class IOUtils
 	{
 		ExternalValues = values;
 	}
-	internal static IDictionary<string, string> ExternalValues
+	internal static IDictionary<string, string>? ExternalValues
 	{
 		get; private set;
 	}
@@ -33,6 +34,7 @@ public static class IOUtils
 		{
 			Console.WriteLine(message);
 		}
+
 		if (ExternalValues != null && !string.IsNullOrEmpty(Paramname))
 		{
 			return ExternalValues [Paramname];
@@ -64,6 +66,7 @@ public static class IOUtils
 			{
 				return iValue;
 			}
+
 			Console.WriteLine("Parsing Error. Enter Other Value. Format Int32: ");
 		}
 	}
@@ -88,6 +91,7 @@ public static class IOUtils
 			{
 				return date;
 			}
+
 			Console.WriteLine("Parsing Error. Enter Other Value. Format dd.mm.yyyy");
 		}
 	}
@@ -145,6 +149,7 @@ public static class IOUtils
 		{
 			Console.WriteLine(message);
 		}
+
 		string sValue;
 		if (ExternalValues == null)
 		{
@@ -157,6 +162,7 @@ public static class IOUtils
 				throw new InvalidOperationException($"Parameter -{ParamName} Not Specified ");
 			}
 		}
+
 		return sValue;
 	}
 }

@@ -1,6 +1,4 @@
-﻿#pragma warning disable CA1303
-
-namespace ProgrammingLabs.Utilities;
+﻿namespace ProgrammingLabs.Utilities;
 
 public static class PrimeFactorsUtils
 {

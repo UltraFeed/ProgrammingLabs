@@ -1,7 +1,4 @@
-﻿#pragma warning disable CA1032
-#pragma warning disable CA1062
-#pragma warning disable CA1308
-#pragma warning disable SYSLIB1045
+﻿#pragma warning disable SYSLIB1045
 
 using System.Text.RegularExpressions;
 

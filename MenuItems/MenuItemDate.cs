@@ -34,7 +34,9 @@ internal sealed class MenuItemDate : MenuItemCore
 			PrimeFactorsUtils.CalcFactors(n);
 			PrimeFactorsUtils.PrintFactors();
 		}
+
 		IOUtils.WaitForKey();
+
 		if (IOUtils.ExternalValues != null)
 		{
 			_ = Console.ReadLine();

@@ -1,6 +1,4 @@
-﻿#pragma warning disable IDE0210
-
-using ProgrammingLabs.MenuItems;
+﻿using ProgrammingLabs.MenuItems;
 using ProgrammingLabs.Utilities;
 
 // -mi 0

@@ -1,4 +1,6 @@
-﻿namespace ProgrammingLabs.Utilities;
+﻿#pragma warning disable CS8603
+
+namespace ProgrammingLabs.Utilities;
 
 internal static class ConsoleParser
 {

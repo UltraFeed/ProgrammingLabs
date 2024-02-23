@@ -1,6 +1,4 @@
-﻿#pragma warning disable CA1303
-
-using ProgrammingLabs.MenuItems;
+﻿using ProgrammingLabs.MenuItems;
 using ProgrammingLabs.Utilities;
 
 namespace ProgrammingLabs;
