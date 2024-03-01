@@ -38,9 +38,9 @@ internal sealed class MenuItemCalc : MenuItemCore
 				Console.WriteLine($"14: ( {nameof(y)} % {nameof(x)} ) / Math.Sqrt({nameof(z)})");
 				Console.WriteLine($"15: ( {nameof(y)} - {nameof(x)} ) / Math.Sqrt({nameof(z)})");
 
-				Console.WriteLine($"{nameof(x)} = " + x);
-				Console.WriteLine($"{nameof(y)} = " + y);
-				Console.WriteLine($"{nameof(z)} = " + z);
+				Console.WriteLine($"{nameof(x)} = {x}");
+				Console.WriteLine($"{nameof(y)} = {y}");
+				Console.WriteLine($"{nameof(z)} = {z}");
 			}
 
 			int input = IOUtils.GetInt("cn", $"{nameof(input)} In Range (0-15): ");
