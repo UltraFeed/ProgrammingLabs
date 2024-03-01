@@ -17,7 +17,7 @@ internal static class ConsoleParser
 		{
 			if (args [i] [0] == '-' && i + 1 < args.Length)
 			{
-				string paramName = args [i] [1..];
+				string paramName = args [i].Substring(1);
 				if (!dic.ContainsKey(paramName))
 				{
 					dic [paramName] = args [i + 1];

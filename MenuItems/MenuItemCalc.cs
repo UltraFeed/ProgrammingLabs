@@ -11,39 +11,39 @@ internal sealed class MenuItemCalc : MenuItemCore
 	internal override void Execute ()
 	{
 		Console.Clear();
-		int x = IOUtils.GetInt("x", "Enter x: ");
-		int y = IOUtils.GetInt("y", "Enter y: ");
-		int z = IOUtils.GetInt("z", "Enter z: ");
+		int x = IOUtils.GetInt(nameof(x), $"Enter {nameof(x)}: ");
+		int y = IOUtils.GetInt(nameof(y), $"Enter {nameof(y)}: ");
+		int z = IOUtils.GetInt(nameof(z), $"Enter {nameof(z)}: ");
 		Console.Clear();
 
 		do
 		{
 			if (IOUtils.ExternalValues == null)
 			{
-				Console.WriteLine("===== MENU =====");
-				Console.WriteLine("0. Exit");
-				Console.WriteLine("01: ( x + y ) / z + sqrt(x)");
-				Console.WriteLine("02: x / z + y^2");
-				Console.WriteLine("03: z^2 + 7 + sqrt(x)");
-				Console.WriteLine("04: y^2 + 3 * sqrt(x) + z");
-				Console.WriteLine("05: ( y - sqrt(x) ) / z");
-				Console.WriteLine("06: y + sqrt(x % z)");
-				Console.WriteLine("07: x % z + sqrt(y)");
-				Console.WriteLine("08: sqrt(x) - 6 / z");
-				Console.WriteLine("09: z / x + 7 * sqrt(y)");
-				Console.WriteLine("10: ( x + sqrt(y) ) / z");
-				Console.WriteLine("11: ( x + sqrt(y) ) % z");
-				Console.WriteLine("12: x % z + sqrt(y)");
-				Console.WriteLine("13: x * y % z");
-				Console.WriteLine("14: ( y % x ) / sqrt(z)");
-				Console.WriteLine("15: ( y - x ) / sqrt(z)");
+				Console.WriteLine($"===== MENU =====");
+				Console.WriteLine($"0. Exit");
+				Console.WriteLine($"01: ( {nameof(x)} + {nameof(y)} ) / {nameof(z)} + Math.Sqrt({nameof(x)})");
+				Console.WriteLine($"02: {nameof(x)} / {nameof(z)} + Math.Pow({nameof(y)}, 2)");
+				Console.WriteLine($"03: Math.Pow({nameof(z)}, 2) + 7 + Math.Sqrt({nameof(x)})");
+				Console.WriteLine($"04: Math.Pow({nameof(y)}, 2) + 3 * Math.Sqrt({nameof(x)}) + {nameof(z)}");
+				Console.WriteLine($"05: ( {nameof(y)} - Math.Sqrt({nameof(x)}) ) / {nameof(z)}");
+				Console.WriteLine($"06: {nameof(y)} + Math.Sqrt({nameof(x)} % {nameof(z)})");
+				Console.WriteLine($"07: {nameof(x)} % {nameof(z)} + Math.Sqrt({nameof(y)})");
+				Console.WriteLine($"08: Math.Sqrt({nameof(x)}) - 6 / {nameof(z)}");
+				Console.WriteLine($"09: {nameof(z)} / {nameof(x)} + 7 * Math.Sqrt({nameof(y)})");
+				Console.WriteLine($"10: ( {nameof(x)} + Math.Sqrt({nameof(y)}) ) / {nameof(z)}");
+				Console.WriteLine($"11: ( {nameof(x)} + Math.Sqrt({nameof(y)}) ) % {nameof(z)}");
+				Console.WriteLine($"12: {nameof(x)} % {nameof(z)} + Math.Sqrt({nameof(y)})");
+				Console.WriteLine($"13: {nameof(x)} * {nameof(y)} % {nameof(z)}");
+				Console.WriteLine($"14: ( {nameof(y)} % {nameof(x)} ) / Math.Sqrt({nameof(z)})");
+				Console.WriteLine($"15: ( {nameof(y)} - {nameof(x)} ) / Math.Sqrt({nameof(z)})");
 
-				Console.WriteLine("x = " + x);
-				Console.WriteLine("y = " + y);
-				Console.WriteLine("z = " + z);
+				Console.WriteLine($"{nameof(x)} = " + x);
+				Console.WriteLine($"{nameof(y)} = " + y);
+				Console.WriteLine($"{nameof(z)} = " + z);
 			}
 
-			int input = IOUtils.GetInt("cn", "Input In Range (0-15): ");
+			int input = IOUtils.GetInt("cn", $"{nameof(input)} In Range (0-15): ");
 
 			if (input == 1)
 			{

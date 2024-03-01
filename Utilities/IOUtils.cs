@@ -23,22 +23,22 @@ public static class IOUtils
 		}
 		else
 		{
-			Console.WriteLine("Press Any Key To Continue");
-			_ = Console.ReadKey();
+			Console.WriteLine("Press Enter To Continue");
+			_ = Console.ReadLine();
 			Console.Clear();
 		}
 	}
 
-	internal static string GetLine (string Paramname, string message)
+	internal static string GetLine (string paramName, string message)
 	{
 		if (!string.IsNullOrEmpty(message) && ExternalValues == null)
 		{
 			Console.WriteLine(message);
 		}
 
-		if (ExternalValues != null && !string.IsNullOrEmpty(Paramname))
+		if (ExternalValues != null && !string.IsNullOrEmpty(paramName))
 		{
-			return ExternalValues [Paramname];
+			return ExternalValues [paramName];
 		}
 		else
 		{
@@ -58,11 +58,11 @@ public static class IOUtils
 		}
 	}
 
-	public static int GetInt (string Paramname, string message)
+	public static int GetInt (string paramName, string message)
 	{
 		while (true)
 		{
-			string sValue = GetValue(Paramname, message);
+			string sValue = GetValue(paramName, message);
 			if (ParseInt(sValue, out int iValue) == true)
 			{
 				return iValue;
@@ -83,11 +83,11 @@ public static class IOUtils
 			return false;
 		}
 	}
-	internal static DateTime GetDate (string Paramname, string message)
+	internal static DateTime GetDate (string paramName, string message)
 	{
 		while (true)
 		{
-			string sValue = GetValue(Paramname, message);
+			string sValue = GetValue(paramName, message);
 			if (ParseDate(sValue, out DateTime date) == true)
 			{
 				return date;
@@ -144,7 +144,7 @@ public static class IOUtils
 		}
 	}
 
-	private static string GetValue (string ParamName, string message)
+	private static string GetValue (string paramName, string message)
 	{
 		if (!string.IsNullOrEmpty(message) && ExternalValues == null)
 		{
@@ -158,9 +158,9 @@ public static class IOUtils
 		}
 		else
 		{
-			if (!ExternalValues.TryGetValue(ParamName, out sValue))
+			if (!ExternalValues.TryGetValue(paramName, out sValue))
 			{
-				throw new InvalidOperationException($"Parameter -{ParamName} Not Specified ");
+				throw new InvalidOperationException($"Parameter -{paramName} Not Specified ");
 			}
 		}
 

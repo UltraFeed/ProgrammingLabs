@@ -35,10 +35,9 @@ internal static class Menu
 	{
 		Console.WriteLine("===== MENU =====");
 		int iMenuItem = 0;
-		for (int i = 0; i < MenuItems.Count; i++)
+		foreach (MenuItemCore menuItem in MenuItems)
 		{
-			MenuItemCore menuItem = MenuItems [i];
-			Console.WriteLine("{0}: {1}", iMenuItem++, menuItem.Title);
+			Console.WriteLine($"{iMenuItem++}: {menuItem.Title}");
 		}
 	}
 }

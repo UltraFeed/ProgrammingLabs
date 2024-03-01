@@ -16,13 +16,13 @@ internal sealed class MenuItemDate : MenuItemCore
 
 		Console.Clear();
 
-		Console.WriteLine("First Date Of First Segment: " + userDate1.ToShortDateString());
-		Console.WriteLine("Second Date Of First Segment: " + userDate2.ToShortDateString());
-		Console.WriteLine("First Date Of Second Segment: " + userDate3.ToShortDateString());
-		Console.WriteLine("Second Date Of Second Segment: " + userDate4.ToShortDateString());
+		Console.WriteLine($"First Date Of First Segment: {userDate1.ToShortDateString()}");
+		Console.WriteLine($"Second Date Of First Segment: {userDate2.ToShortDateString()}");
+		Console.WriteLine($"First Date Of Second Segment: {userDate3.ToShortDateString()}");
+		Console.WriteLine($"Second Date Of Second Segment: {userDate4.ToShortDateString()}");
 
 		int n = IOUtils.GetIntersection(userDate1, userDate2, userDate3, userDate4);
-		Console.WriteLine("N = " + n);
+		Console.WriteLine($"{nameof(n)} = {n}");
 
 		if (n <= 0)
 		{
