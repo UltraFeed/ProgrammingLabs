@@ -11,30 +11,30 @@ namespace ProgrammingLabs;
 
 internal static class Program
 {
-	private static void Main (string [] args)
-	{
-		IDictionary<string, string> argsDic = ConsoleParser.Parse(args);
-		IOUtils.SetExtValues(argsDic);
+    private static void Main (string [] args)
+    {
+        IDictionary<string, string> argsDic = ConsoleParser.Parse(args);
+        IOUtils.SetExtValues(argsDic);
 
-		Menu.ClearItems();
-		Menu.AddItem(new MenuItemExit());
-		Menu.AddItem(new MenuItemHW());
-		Menu.AddItem(new MenuItemCalc());
-		Menu.AddItem(new MenuItemDate());
-		Menu.AddItem(new MenuItemStrings());
+        Menu.ClearItems();
+        Menu.AddItem(new MenuItemExit());
+        Menu.AddItem(new MenuItemHW());
+        Menu.AddItem(new MenuItemCalc());
+        Menu.AddItem(new MenuItemDate());
+        Menu.AddItem(new MenuItemStrings());
 
-		if (argsDic != null)
-		{
-			Menu.Execute();
-			return;
-		}
-		else
-		{
-			while (true)
-			{
-				Menu.ShowMenu();
-				Menu.Execute();
-			}
-		}
-	}
+        if (argsDic != null)
+        {
+            Menu.Execute();
+            return;
+        }
+        else
+        {
+            while (true)
+            {
+                Menu.ShowMenu();
+                Menu.Execute();
+            }
+        }
+    }
 }
