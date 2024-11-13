@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingLabs", "ProgrammingLabs.csproj", "{7B09DE94-B94A-4DF1-8F43-33A2AC5E6E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingLabs", "src\ProgrammingLabs\ProgrammingLabs.csproj", "{7B09DE94-B94A-4DF1-8F43-33A2AC5E6E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLabsTests", "ProgrammingLabsTests\ProgrammingLabsTests.csproj", "{DCC11A07-790A-4B79-8CEA-77286164CCA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLabsTests", "src\ProgrammingLabsTests\ProgrammingLabsTests.csproj", "{DCC11A07-790A-4B79-8CEA-77286164CCA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
