@@ -1,0 +1,55 @@
+<Project>
+
+	<PropertyGroup>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<Deterministic>true</Deterministic>
+		<ErrorReport>none</ErrorReport>
+		<NoWarn>CA1028,CA1031,CS1591</NoWarn>
+		<Nullable>annotations</Nullable>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryBranch>main</RepositoryBranch>
+		<RepositoryType>Git</RepositoryType>
+		<TargetFramework>net9.0</TargetFramework>
+		<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+		<RollForward>LatestMajor</RollForward>
+		<MinimumVisualStudioVersion>17.12</MinimumVisualStudioVersion>
+		<AnalysisLevel>latest-all</AnalysisLevel>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<DebugType>embedded</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<Optimize>true</Optimize>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>false</IsTestProject>
+		<LangVersion>latest</LangVersion>
+		<PublishTrimmed>false</PublishTrimmed>
+		<PublishSingleFile>true</PublishSingleFile>
+		<PublishReadyToRun>false</PublishReadyToRun>
+		<SourceLinkCreate>false</SourceLinkCreate>
+		<VisualStudioVersion>17.12</VisualStudioVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Путь для выходных файлов -->
+		<OutputPath>bin\Release</OutputPath>
+
+		<!-- Путь для промежуточных файлов -->
+		<IntermediateOutputPath>obj\Release</IntermediateOutputPath>
+
+		<!-- Автоматическая генерация сборок сериализации -->
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+
+		<!-- Копирование локальных зависимостей -->
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<Optimize>true</Optimize>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+</Project>
