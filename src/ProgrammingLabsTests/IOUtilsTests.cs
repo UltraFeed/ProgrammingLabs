@@ -1,4 +1,4 @@
-﻿#pragma warning disable CA1812
+#pragma warning disable CA1515
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProgrammingLabs.Utilities;
@@ -6,7 +6,7 @@ using ProgrammingLabs.Utilities;
 namespace ProgrammingLabsTests;
 
 [TestClass]
-internal sealed class IOUtilsTests
+public sealed class IOUtilsTests
 {
 	[TestMethod]
 	public void ParseIntTestIntTrue ()
@@ -71,7 +71,7 @@ internal sealed class IOUtilsTests
 		DateTime b1 = DateTime.Today.AddDays(1);
 		DateTime a2 = DateTime.Today;
 		DateTime b2 = DateTime.Today.AddDays(2);
-		Assert.AreEqual(IOUtils.GetIntersection(a1, b1, a2, b2), 2);
+		Assert.AreEqual(2, IOUtils.GetIntersection(a1, b1, a2, b2));
 	}
 
 	[TestMethod]
@@ -81,6 +81,6 @@ internal sealed class IOUtilsTests
 		DateTime b1 = DateTime.Today;
 		DateTime a2 = DateTime.Today.AddDays(1);
 		DateTime b2 = DateTime.Today.AddDays(1);
-		Assert.AreEqual(IOUtils.GetIntersection(a1, b1, a2, b2), 0);
+		Assert.AreEqual(0, IOUtils.GetIntersection(a1, b1, a2, b2));
 	}
 }

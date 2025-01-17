@@ -1,4 +1,4 @@
-﻿#pragma warning disable CA1812
+#pragma warning disable CA1515
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProgrammingLabs.Utilities;
@@ -6,7 +6,7 @@ using ProgrammingLabs.Utilities;
 namespace ProgrammingLabsTests;
 
 [TestClass]
-internal sealed class StringsUtilsTests
+public sealed class StringsUtilsTests
 {
 	[TestMethod]
 	public void CheckEqualsTestTrue ()
