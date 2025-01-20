@@ -1,4 +1,4 @@
-﻿#pragma warning disable CS8603
+#pragma warning disable CS8603
 
 namespace ProgrammingLabs.Utilities;
 

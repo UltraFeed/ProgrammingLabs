@@ -1,4 +1,4 @@
-﻿#pragma warning disable CA1032
+#pragma warning disable CA1032
 #pragma warning disable CA1062
 #pragma warning disable CA1308
 #pragma warning disable CA1515

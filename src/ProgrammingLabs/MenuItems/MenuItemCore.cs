@@ -1,4 +1,4 @@
-﻿namespace ProgrammingLabs.MenuItems;
+namespace ProgrammingLabs.MenuItems;
 
 internal abstract class MenuItemCore
 {

@@ -1,4 +1,4 @@
-﻿#pragma warning disable CA1303
+#pragma warning disable CA1303
 #pragma warning disable CA1515
 #pragma warning disable CS8600
 #pragma warning disable CS8603

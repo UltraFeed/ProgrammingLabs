@@ -1,4 +1,4 @@
-﻿using ProgrammingLabs.Utilities;
+using ProgrammingLabs.Utilities;
 
 namespace ProgrammingLabs.MenuItems;
 
