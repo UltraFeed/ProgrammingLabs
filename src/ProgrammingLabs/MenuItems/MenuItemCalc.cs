@@ -56,7 +56,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{((x + y) / z) + Math.Sqrt(x):N3}");
 				}
 			}
-
 			else if (input == 2)
 			{
 				if (z == 0)
@@ -68,7 +67,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{(x / z) + Math.Pow(y, 2):N3}");
 				}
 			}
-
 			else if (input == 3)
 			{
 				if (x < 0)
@@ -80,7 +78,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{Math.Pow(z, 2) + 7 + Math.Sqrt(x):N3}");
 				}
 			}
-
 			else if (input == 4)
 			{
 				if (x < 0)
@@ -92,7 +89,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{Math.Pow(y, 2) + (3 * Math.Sqrt(x)) + z:N3}");
 				}
 			}
-
 			else if (input == 5)
 			{
 				if (x < 0 | z == 0)
@@ -104,7 +100,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{(y - Math.Sqrt(x)) / z:N3}");
 				}
 			}
-
 			else if (input == 6)
 			{
 				if (z == 0)
@@ -116,7 +111,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{y + Math.Sqrt(x % z):N3}");
 				}
 			}
-
 			else if (input == 7)
 			{
 				if (y < 0 | z == 0)
@@ -128,7 +122,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{(x % z) + Math.Sqrt(y):N3}");
 				}
 			}
-
 			else if (input == 8)
 			{
 				if (x < 0 | z == 0)
@@ -140,7 +133,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{Math.Sqrt(x) - (6 / z):N3}");
 				}
 			}
-
 			else if (input == 9)
 			{
 				if (y < 0 | x == 0)
@@ -152,7 +144,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{(z / x) + (7 * Math.Sqrt(y)):N3}");
 				}
 			}
-
 			else if (input == 10)
 			{
 				if (y < 0 | z == 0)
@@ -164,7 +155,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{(x + Math.Sqrt(y)) / z:N3}");
 				}
 			}
-
 			else if (input == 11)
 			{
 				if (y < 0 | z == 0)
@@ -176,7 +166,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{(x + Math.Sqrt(y)) % z:N3}");
 				}
 			}
-
 			else if (input == 12)
 			{
 				if (y < 0 | z == 0)
@@ -188,7 +177,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{(x % z) + Math.Sqrt(y):N3}");
 				}
 			}
-
 			else if (input == 13)
 			{
 				if (z == 0)
@@ -200,7 +188,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{x * y % z:N3}");
 				}
 			}
-
 			else if (input == 14)
 			{
 				if (x == 0 | z <= 0)
@@ -212,7 +199,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine($"{y % x / Math.Sqrt(z):N3}");
 				}
 			}
-
 			else if (input == 15)
 			{
 				if (z <= 0)
@@ -224,7 +210,6 @@ internal sealed class MenuItemCalc : MenuItemCore
 					Console.WriteLine(value: $"{(y - x) / Math.Sqrt(z):N3}");
 				}
 			}
-
 			else if (input == 0)
 			{
 				IOUtils.WaitForKey();
