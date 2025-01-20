@@ -110,7 +110,6 @@ internal sealed class MenuItemStrings : MenuItemCore
 		{
 			StringsUtils.CheckEmail(userStr1);
 			Console.WriteLine($"{userStr1} is email address");
-
 		}
 		catch (CheckException ex)
 		{

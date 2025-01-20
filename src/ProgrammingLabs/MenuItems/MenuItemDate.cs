@@ -26,7 +26,6 @@ internal sealed class MenuItemDate : MenuItemCore
 
 		if (n <= 0)
 		{
-
 			Console.WriteLine($"Calculating prime factors is forbidden if {n} <= {0}");
 		}
 		else
