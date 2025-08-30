@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitattributes" />
+    <File Path=".github/renovate.json" />
+    <File Path=".github/workflows/codeql.yml" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/ProgrammingLabs/ProgrammingLabs.csproj" />
+  <Project Path="src/ProgrammingLabsTests/ProgrammingLabsTests.csproj" />
+</Solution>
