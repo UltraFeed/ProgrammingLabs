@@ -1,5 +1,4 @@
 <Project>
-
 	<PropertyGroup>
 		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
 		<Deterministic>true</Deterministic>
@@ -9,10 +8,10 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryBranch>main</RepositoryBranch>
 		<RepositoryType>Git</RepositoryType>
-		<TargetFramework>net9.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 		<RollForward>LatestMajor</RollForward>
-		<MinimumVisualStudioVersion>17.12</MinimumVisualStudioVersion>
+		<MinimumVisualStudioVersion>18.3</MinimumVisualStudioVersion>
 		<AnalysisLevel>latest-all</AnalysisLevel>
 		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 		<DebugType>embedded</DebugType>
@@ -29,27 +28,20 @@
 		<SourceLinkCreate>false</SourceLinkCreate>
 		<VisualStudioVersion>17.12</VisualStudioVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
-
 		<!-- Путь для выходных файлов -->
 		<OutputPath>bin\Release</OutputPath>
-
 		<!-- Путь для промежуточных файлов -->
 		<IntermediateOutputPath>obj\Release</IntermediateOutputPath>
-
 		<!-- Автоматическая генерация сборок сериализации -->
 		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-
 		<!-- Копирование локальных зависимостей -->
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 	</PropertyGroup>
-
 	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
 		<Optimize>false</Optimize>
 	</PropertyGroup>
-
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<Optimize>true</Optimize>
 		<DebugSymbols>false</DebugSymbols>
 	</PropertyGroup>
-
 </Project>
